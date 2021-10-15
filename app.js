@@ -14,5 +14,17 @@ function moveCursor(e) {
     innerCursor.style.top = `${y}px`;
     outerCursor.style.left = `${x}px`;
     outerCursor.style.top = `${y}px`;
-
 }
+
+let links = Array.from(document.querySelectorAll('a'));
+
+// console.log('links');
+
+links.forEach(link => {
+    link.addEventListener('mouseover', ()=>{
+        innerCursor.classList.add('grow');
+    });
+    link.addEventListener('mouseleave', ()=>{
+        innerCursor.classList.remove('grow');
+    });
+});
