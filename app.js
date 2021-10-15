@@ -5,8 +5,8 @@ document.addEventListener('mousemove', moveCursor);
 
 function moveCursor(e) {
     let x = e.clientX;
-    let y = y.clientY;
+    let y = e.clientY;
 
-    console.log(x, y)
+    console.log(x, y);
 
 }
