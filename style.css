@@ -2,18 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Roboto', sans-serif;
     cursor: none;
 }
 
 a {
     text-decoration: none;
-    color: #e0a9ec;
+    color: #e9cbd5;
+    font-weight: 500;
 }
 
 body,
 html {
     background-color: #0f0c75;
+    font-size: 15px;
+    line-height: 15px;
     width: 100%;
     height: 100vh;
 }
@@ -31,8 +34,11 @@ ul {
     height: 50%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     list-style: none;
 }
+
+
 
 .inner-cursor {
     position: fixed;
@@ -40,7 +46,7 @@ ul {
     width: 10px;
     height: 10px;
     transform: translate(-50%, -50%);
-    background-color: #fff;
+    background-color: #F480ED;
     mix-blend-mode: difference;
     border-radius: 50%;
     pointer-events: none;
